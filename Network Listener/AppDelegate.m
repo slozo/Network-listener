@@ -85,6 +85,8 @@ void wifi_network_changed(SCDynamicStoreRef store, CFArrayRef changedKeys, void 
     CWInterface *WiFiInterface = [CWInterface interface];
     self.currentSSID = [WiFiInterface ssid] ? [WiFiInterface ssid] : NOT_CONNECTED;
     
+    // Following code taken form  http://stackoverflow.com/a/15102521/3488699
+    
     /* Get a list of all wifi interfaces, and build an array of SCDynamicStore keys to monitor */
     NSSet *wifiInterfaces = [CWInterface interfaceNames];
     NSMutableArray *scKeys = [[NSMutableArray alloc] init];
