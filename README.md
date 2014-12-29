@@ -3,16 +3,19 @@ Network-listener
 
 This is sample app for http://apple.stackexchange.com/q/139267/74657 question.
 
-To make it work:
-place: .networkConnected inside $HOME directory
-place: .networkDisconnected inside $HOME directory
-place: Network-Listener.plist inside $HOME/Library/LaunchAgents/ directory
-place: Network Listener.app inside $HOME/Documents directory
-make .networkConnected and .networkDisconnected executable
+To make it work: <ul>
+<li>place: .networkConnected inside $HOME directory</li>
+<li>place: .networkDisconnected inside $HOME directory</li>
+<li>place: Network-Listener.plist inside $HOME/Library/LaunchAgents/ directory</li>
+<li>place: Network Listener.app inside $HOME/Documents directory</li>
+<li>make .networkConnected and .networkDisconnected executable</li>
+</ul>
 
-File .networkDisconnected gets the name of the disconnected network as first argument.
-File .networkConnected gets the name of the connected network as second argument.
-File .networkConnected gets the name of disconnected network as first argument. 
+Executable scripts: <ul>
+<li>File .networkDisconnected gets the name of the disconnected network as first argument.</li>
+<li>File .networkConnected gets the name of the connected network as second argument.</li>
+<li>File .networkConnected gets the name of disconnected network as first argument. </li>
+</ul>
 
 NOTE: right now first argument to .networkConnected is always „NOT_CONNECTED” because between changing the network notification about disconnection is sent to this daemon.
 

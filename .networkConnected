@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [[ "$1" == "NOT_CONNECTED" ]]; then
+  echo $(date) connected to "$2" > ~/Desktop/connection.txt 
+else
+  echo $(date) changed connection from "$1" to "$2" > ~/Desktop.disconnection.txt
+fi
