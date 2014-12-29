@@ -82,6 +82,8 @@ void wifi_network_changed(SCDynamicStoreRef store, CFArrayRef changedKeys, void 
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 
+    NSLog(@"Starting SSID change daemon.");
+    
     CWInterface *WiFiInterface = [CWInterface interface];
     self.currentSSID = [WiFiInterface ssid] ? [WiFiInterface ssid] : NOT_CONNECTED;
     
@@ -117,6 +119,8 @@ void wifi_network_changed(SCDynamicStoreRef store, CFArrayRef changedKeys, void 
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
     // Insert code here to tear down your application
+    
+    NSLog(@"Finishing SSID change daemon.");
 }
 
 @end

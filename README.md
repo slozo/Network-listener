@@ -7,7 +7,7 @@ To make it work: <ul>
 <li>place: <code>.networkConnected</code> inside $HOME directory</li>
 <li>place: .networkDisconnected inside $HOME directory</li>
 <li>place: Network-Listener.plist inside $HOME/Library/LaunchAgents/ directory</li>
-<li>place: Network Listener.app inside $HOME/Documents directory</li>
+<li>place: Network Listener.app inside /Applications directory</li>
 <li>make .networkConnected and .networkDisconnected executable</li>
 </ul>
 
@@ -19,6 +19,5 @@ Executable scripts: <ul>
 
 NOTE: right now first argument to .networkConnected is always „NOT_CONNECTED” because between changing the network - notification about disconnection is sent to this daemon.
 
-  
-
+Credits:
 Network change notifications code from http://stackoverflow.com/a/15102521/3488699
