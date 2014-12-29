@@ -17,6 +17,7 @@
 		27610B2E1A51820E00C748F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27610B2C1A51820E00C748F3 /* Main.storyboard */; };
 		27610B311A51947700C748F3 /* .networkConnected in Resources */ = {isa = PBXBuildFile; fileRef = 27610B2F1A51947700C748F3 /* .networkConnected */; };
 		27610B321A51947700C748F3 /* .networkDisconnected in Resources */ = {isa = PBXBuildFile; fileRef = 27610B301A51947700C748F3 /* .networkDisconnected */; };
+		27610B341A51955C00C748F3 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 27610B331A51955C00C748F3 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		27610B2D1A51820E00C748F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27610B2F1A51947700C748F3 /* .networkConnected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = .networkConnected; sourceTree = "<group>"; };
 		27610B301A51947700C748F3 /* .networkDisconnected */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = .networkDisconnected; sourceTree = "<group>"; };
+		27610B331A51955C00C748F3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		27610AF51A51750F00C748F3 = {
 			isa = PBXGroup;
 			children = (
+				27610B331A51955C00C748F3 /* README.md */,
 				27610B2F1A51947700C748F3 /* .networkConnected */,
 				27610B301A51947700C748F3 /* .networkDisconnected */,
 				27610B2A1A517B2A00C748F3 /* Network-Listener.plist */,
@@ -230,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27610B341A51955C00C748F3 /* README.md in Sources */,
 				27610B071A51750F00C748F3 /* main.m in Sources */,
 				27610B051A51750F00C748F3 /* AppDelegate.m in Sources */,
 			);
