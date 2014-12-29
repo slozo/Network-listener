@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		27610B051A51750F00C748F3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27610B041A51750F00C748F3 /* AppDelegate.m */; };
 		27610B071A51750F00C748F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27610B061A51750F00C748F3 /* main.m */; };
-		27610B0A1A51750F00C748F3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27610B091A51750F00C748F3 /* ViewController.m */; };
 		27610B0C1A51750F00C748F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27610B0B1A51750F00C748F3 /* Images.xcassets */; };
-		27610B0F1A51750F00C748F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27610B0D1A51750F00C748F3 /* Main.storyboard */; };
 		27610B1B1A51750F00C748F3 /* Network_ListenerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27610B1A1A51750F00C748F3 /* Network_ListenerTests.m */; };
 		27610B271A5178ED00C748F3 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27610B261A5178ED00C748F3 /* CoreServices.framework */; };
 		27610B291A51790C00C748F3 /* CoreWLAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27610B281A51790C00C748F3 /* CoreWLAN.framework */; };
+		27610B2B1A517B2A00C748F3 /* Network-Listener.plist in Resources */ = {isa = PBXBuildFile; fileRef = 27610B2A1A517B2A00C748F3 /* Network-Listener.plist */; };
+		27610B2E1A51820E00C748F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27610B2C1A51820E00C748F3 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,15 +33,14 @@
 		27610B031A51750F00C748F3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		27610B041A51750F00C748F3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		27610B061A51750F00C748F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		27610B081A51750F00C748F3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		27610B091A51750F00C748F3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		27610B0B1A51750F00C748F3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		27610B0E1A51750F00C748F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		27610B141A51750F00C748F3 /* Network ListenerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Network ListenerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27610B191A51750F00C748F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27610B1A1A51750F00C748F3 /* Network_ListenerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Network_ListenerTests.m; sourceTree = "<group>"; };
 		27610B261A5178ED00C748F3 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		27610B281A51790C00C748F3 /* CoreWLAN.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreWLAN.framework; path = System/Library/Frameworks/CoreWLAN.framework; sourceTree = SDKROOT; };
+		27610B2A1A517B2A00C748F3 /* Network-Listener.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Network-Listener.plist"; sourceTree = "<group>"; };
+		27610B2D1A51820E00C748F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +66,7 @@
 		27610AF51A51750F00C748F3 = {
 			isa = PBXGroup;
 			children = (
+				27610B2A1A517B2A00C748F3 /* Network-Listener.plist */,
 				27610B281A51790C00C748F3 /* CoreWLAN.framework */,
 				27610B261A5178ED00C748F3 /* CoreServices.framework */,
 				27610B001A51750F00C748F3 /* Network Listener */,
@@ -89,10 +89,8 @@
 			children = (
 				27610B031A51750F00C748F3 /* AppDelegate.h */,
 				27610B041A51750F00C748F3 /* AppDelegate.m */,
-				27610B081A51750F00C748F3 /* ViewController.h */,
-				27610B091A51750F00C748F3 /* ViewController.m */,
 				27610B0B1A51750F00C748F3 /* Images.xcassets */,
-				27610B0D1A51750F00C748F3 /* Main.storyboard */,
+				27610B2C1A51820E00C748F3 /* Main.storyboard */,
 				27610B011A51750F00C748F3 /* Supporting Files */,
 			);
 			path = "Network Listener";
@@ -204,8 +202,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27610B2E1A51820E00C748F3 /* Main.storyboard in Resources */,
+				27610B2B1A517B2A00C748F3 /* Network-Listener.plist in Resources */,
 				27610B0C1A51750F00C748F3 /* Images.xcassets in Resources */,
-				27610B0F1A51750F00C748F3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +222,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27610B0A1A51750F00C748F3 /* ViewController.m in Sources */,
 				27610B071A51750F00C748F3 /* main.m in Sources */,
 				27610B051A51750F00C748F3 /* AppDelegate.m in Sources */,
 			);
@@ -248,10 +246,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		27610B0D1A51750F00C748F3 /* Main.storyboard */ = {
+		27610B2C1A51820E00C748F3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				27610B0E1A51750F00C748F3 /* Base */,
+				27610B2D1A51820E00C748F3 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

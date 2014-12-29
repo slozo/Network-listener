@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
-
+@property (nonatomic, copy) NSString *currentSSID;
 
 @end
 
