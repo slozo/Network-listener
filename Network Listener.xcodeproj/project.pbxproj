@@ -13,6 +13,8 @@
 		27610B0C1A51750F00C748F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27610B0B1A51750F00C748F3 /* Images.xcassets */; };
 		27610B0F1A51750F00C748F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27610B0D1A51750F00C748F3 /* Main.storyboard */; };
 		27610B1B1A51750F00C748F3 /* Network_ListenerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27610B1A1A51750F00C748F3 /* Network_ListenerTests.m */; };
+		27610B271A5178ED00C748F3 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27610B261A5178ED00C748F3 /* CoreServices.framework */; };
+		27610B291A51790C00C748F3 /* CoreWLAN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27610B281A51790C00C748F3 /* CoreWLAN.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		27610B141A51750F00C748F3 /* Network ListenerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Network ListenerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27610B191A51750F00C748F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27610B1A1A51750F00C748F3 /* Network_ListenerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Network_ListenerTests.m; sourceTree = "<group>"; };
+		27610B261A5178ED00C748F3 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		27610B281A51790C00C748F3 /* CoreWLAN.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreWLAN.framework; path = System/Library/Frameworks/CoreWLAN.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27610B291A51790C00C748F3 /* CoreWLAN.framework in Frameworks */,
+				27610B271A5178ED00C748F3 /* CoreServices.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +67,8 @@
 		27610AF51A51750F00C748F3 = {
 			isa = PBXGroup;
 			children = (
+				27610B281A51790C00C748F3 /* CoreWLAN.framework */,
+				27610B261A5178ED00C748F3 /* CoreServices.framework */,
 				27610B001A51750F00C748F3 /* Network Listener */,
 				27610B171A51750F00C748F3 /* Network ListenerTests */,
 				27610AFF1A51750F00C748F3 /* Products */,
@@ -334,6 +342,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Network Listener/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -345,6 +354,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Network Listener/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
